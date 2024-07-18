@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.login-card {
+    padding: 1.5rem;
+    border-radius: .75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login-card .form-control:focus {
+    box-shadow: none;
+    border-color: #A2C0FC;
+}
+
+.reset-password-container {
+    max-width: 350px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 50px;
+}
