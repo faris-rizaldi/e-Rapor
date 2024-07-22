@@ -17,7 +17,7 @@
                     <div class="row mt-5 align-items-center">
                         <div class="col-md-3 text-center mb-5">
                         <div class="avatar avatar-xl">
-                            <img src="<?= base_url('assets/') ?>avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle">
+                            <img src="<?= base_url('assets/') ?>avatars/face-7.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
                         </div>
                         <div class="col">

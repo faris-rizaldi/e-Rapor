@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="<?= base_url('assets/') ?>images/favicon.ico">
         <title><?= $title; ?></title>
         <!-- Simple bar CSS -->
         <link rel="stylesheet" href="<?= base_url('assets/') ?>css/simplebar.css">
@@ -69,7 +69,7 @@
                         <a class="nav-link dropdown-toggle text-muted pr-0 d-flex align-items-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <span class="avatar avatar-sm mt-2">
-                                    <img src="<?= base_url('assets/') ?>avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                    <img src="<?= base_url('assets/') ?>avatars/face-7.jpg" alt="..." class="avatar-img rounded-circle">
                                 </span>
                             </div>
                             <div class="mx-3">
