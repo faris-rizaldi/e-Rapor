@@ -25,13 +25,13 @@
         <ul class="navbar-nav flex-fill w-100 mb-2">
             <li class="nav-item w-100">
                 <a href="<?= base_url('dashboard/tujuanpembelajaran') ?>" class="nav-link">
-                    <i class="fe fe-box fe-16"></i>
+                    <i class="fe fe-16 fe-layers"></i>
                     <span class="ml-3 item-text">Tujuan Pembelajaran</span>
                 </a>             
             </li>
             <li class="nav-item dropdown">
                 <a href="#tp" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
-                    <i class="fe fe-credit-card fe-16"></i>
+                    <i class="fe fe-16 fe-folder-plus"></i>
                     <span class="ml-3 item-text">Nilai Rapor</span>
                 </a>
                 <ul class="collapse list-unstyled pl-4 w-100" id="tp">
@@ -45,7 +45,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
-                    <i class="fe fe-grid fe-16"></i>
+                    <i class="fe fe-16 fe-inbox"></i>
                     <span class="ml-3 item-text">Cek Penilaian</span>
                 </a>
                 <ul class="collapse list-unstyled pl-4 w-100" id="tables">
