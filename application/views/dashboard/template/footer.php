@@ -189,19 +189,6 @@
             });
         });
     </script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('input[type="text"]').forEach(function (input) {
-                input.addEventListener('input', function () {
-                    this.value = this.value.replace(/[^0-9]/g, '');
-                    if (parseInt(this.value) > 100) {
-                        this.value = 0;
-                    }
-                });
-            });
-        });
-    </script>
         
     <script>
         document.getElementById('myForm').addEventListener('submit', function(event) {
@@ -374,20 +361,8 @@
             toggleVisibility();
             });
         });
-    </script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('input[type="text"]').forEach(function (input) {
-                input.addEventListener('input', function () {
-                    this.value = this.value.replace(/[^0-9]/g, '');
-                    if (parseInt(this.value) > 100) {
-                        this.value = 0;
-                    }
-                });
-            });
-        });
-    </script>
+        </script>     
+
     <script>
         // Fungsi yang dipanggil saat tombol "Kirim" diklik
         function submitForm() {
@@ -420,5 +395,78 @@
             }
         }
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var inputIds = [
+                'inputBobotAvrageSumantif', 'inputBobotATS', 'inputBobotAAS',
+                'inputSumantif1', 'inputSumantif2', 'inputSumantif3', 
+                'inputSumantif4', 'inputSumantif5', 'inputSumantif6', 
+                'inputAverageSumantif', 'inputAts', 'inputAas', 'inputNilaiRapor'
+            ];
+            
+            inputIds.forEach(function(id) {
+                var inputElement = document.getElementById(id);
+                inputElement.addEventListener('input', function () {
+                    this.value = this.value.replace(/[^0-9]/g, '');
+                    if (parseInt(this.value) > 100) {
+                        this.value = 0;
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        function validatePassword() {
+            var oldPassword = document.getElementById("inputOldPassword").value;
+            var newPassword = document.getElementById("inputNewPassword").value;
+            var confirmPassword = document.getElementById("inputConfirmPassword").value;
+            
+            var errorMessage = [];
+            
+            if (newPassword.length < 8) {
+                errorMessage.push("Kata sandi baru harus minimal 8 karakter.");
+            }
+            
+            if (!/[!@#$%^&*(),.?":{}|<>]/g.test(newPassword)) {
+                errorMessage.push("Kata sandi baru harus mengandung setidaknya satu karakter khusus.");
+            }
+            
+            if (!/\d/.test(newPassword)) {
+                errorMessage.push("Kata sandi baru harus mengandung setidaknya satu nomor.");
+            }
+            
+            if (newPassword === oldPassword) {
+                errorMessage.push("Kata sandi baru tidak boleh sama dengan kata sandi lama.");
+            }
+            
+            if (newPassword !== confirmPassword) {
+                errorMessage.push("Kata sandi baru dan konfirmasi kata sandi baru tidak cocok.");
+            }
+            
+            if (errorMessage.length > 0) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Kesalahan',
+                    html: errorMessage.join('<br>'),
+                    customClass: {
+                        confirmButton: 'btn btn-primary'
+                    }
+                });
+            } else {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil',
+                    text: 'Kata sandi berhasil diubah!',
+                    customClass: {
+                        confirmButton: 'btn btn-primary'
+                    }
+                });
+                // Lakukan aksi lain seperti mengirim data ke server
+            }
+        }
+        </script>
 </body>
 </html>

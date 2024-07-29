@@ -81,14 +81,6 @@
                                                 <td>TP 6</td>
                                                 <td><input type="text" class="form-control" name="TP6" autocomplete="off"></td>
                                             </tr>
-                                            <tr>
-                                            <td>TP 7</td>
-                                            <td><input type="text" class="form-control" name="TP7" autocomplete="off"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>TP 8</td>
-                                            <td><input type="text" class="form-control" name="TP8" autocomplete="off"></td>
-                                        </tr>
                                         </tbody>
                                     </table>
                                     <div id="errorSection" class="text-danger" style="display: none;">
